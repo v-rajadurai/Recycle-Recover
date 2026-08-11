@@ -7,7 +7,7 @@ import com.example.backend.model.LoginModel;
 import com.example.backend.repository.LogRepo;
 
 @Service
-public class SigninService {
+public class SignInService {
     @Autowired 
     private LogRepo rep;
     public boolean autho( String email, String password) {

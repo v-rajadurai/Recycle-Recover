@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.backend.model.LoginModel;
-import com.example.backend.service.SigninService;
+import com.example.backend.service.SignInService;
  
 @RestController
-public class SigninController {
+public class SignInController {
      @Autowired
-    private SigninService signin;
+    private SignInService signin;
 
     @GetMapping("/auth")
     public boolean autho(@RequestParam String email,@RequestParam String pass )
